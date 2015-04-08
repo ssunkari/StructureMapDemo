@@ -1,0 +1,14 @@
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\MultiTenant.Api.dll
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\MultiTenant.Api.pdb
+C:\Spikes\StructureMapLessons\MultiTenant.Api\obj\Debug\MultiTenant.Api.dll
+C:\Spikes\StructureMapLessons\MultiTenant.Api\obj\Debug\MultiTenant.Api.pdb
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMap.dll
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\TenantA.dll
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\TenantB.dll
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMapLessons.dll
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\TenantA.pdb
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\TenantB.pdb
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMap.pdb
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMap.xml
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMapLessons.pdb
+C:\Spikes\StructureMapLessons\MultiTenant.Api\obj\Debug\MultiTenant.Api.csprojResolveAssemblyReference.cache

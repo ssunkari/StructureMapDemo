@@ -1,0 +1,10 @@
+C:\Spikes\StructureMapLessons\TenantB\bin\Debug\TenantB.dll
+C:\Spikes\StructureMapLessons\TenantB\bin\Debug\TenantB.pdb
+C:\Spikes\StructureMapLessons\TenantB\bin\Debug\StructureMapLessons.dll
+C:\Spikes\StructureMapLessons\TenantB\bin\Debug\StructureMap.dll
+C:\Spikes\StructureMapLessons\TenantB\bin\Debug\StructureMapLessons.pdb
+C:\Spikes\StructureMapLessons\TenantB\bin\Debug\StructureMap.pdb
+C:\Spikes\StructureMapLessons\TenantB\bin\Debug\StructureMap.xml
+C:\Spikes\StructureMapLessons\TenantB\obj\Debug\TenantB.csprojResolveAssemblyReference.cache
+C:\Spikes\StructureMapLessons\TenantB\obj\Debug\TenantB.dll
+C:\Spikes\StructureMapLessons\TenantB\obj\Debug\TenantB.pdb

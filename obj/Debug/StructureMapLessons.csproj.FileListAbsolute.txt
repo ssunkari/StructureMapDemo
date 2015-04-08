@@ -1,0 +1,7 @@
+C:\Spikes\StructureMapLessons\bin\Debug\StructureMapLessons.dll
+C:\Spikes\StructureMapLessons\bin\Debug\StructureMapLessons.pdb
+C:\Spikes\StructureMapLessons\bin\Debug\StructureMap.dll
+C:\Spikes\StructureMapLessons\bin\Debug\StructureMap.pdb
+C:\Spikes\StructureMapLessons\bin\Debug\StructureMap.xml
+C:\Spikes\StructureMapLessons\obj\Debug\StructureMapLessons.dll
+C:\Spikes\StructureMapLessons\obj\Debug\StructureMapLessons.pdb
