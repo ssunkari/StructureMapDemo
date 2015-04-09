@@ -1,18 +1,15 @@
-﻿
-using StructureMap;
+﻿using StructureMap;
 using TenantA;
 using TenantB;
 
 namespace MultiTenant.Api
 {
-    public static class Bootstrapper
+    public static class ServiceBootstrapper
     {
-        private static Container _container;
 
         public static void Bootstrap()
         {
-            _container = new Container();
-            _container.Configure(x=>
+            ObjectFactory.Initialize(x=>
                 {
                     x.Scan(scanner =>
                         {
@@ -20,10 +17,29 @@ namespace MultiTenant.Api
                             scanner.WithDefaultConventions();
                         }
                         );
-                    x.AddRegistry<ARegistries>();
-                    x.AddRegistry<BRegistries>();
+                });
+          
+            var AContainer = new Container();
+            
+            AContainer.Configure(x =>
+                {
+                    x.AddRegistry<ARegisteries>();
+                });
+            
+
+            var BContainer = new Container();
+            BContainer.Configure(x =>
+            {
+                x.AddRegistry<BRegistries>();
+            });
+            
+
+            ObjectFactory
+                .Container.Configure(x => {
+                    
+                    x.For<IContainer>().Use(AContainer).Named("A");
+                    x.For<IContainer>().Use(BContainer).Named("B");
                 });
         }
-
     }
 }

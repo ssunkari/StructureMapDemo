@@ -1,7 +1,7 @@
-﻿namespace TenantA
+﻿namespace StructureMapLessons
 {
     public interface IPrint
     {
-        string Write();
+        string GetLine();
     }
 }

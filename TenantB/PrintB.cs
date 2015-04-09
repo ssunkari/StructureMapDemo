@@ -1,12 +1,19 @@
-﻿using TenantA;
+﻿using StructureMapLessons;
 
 namespace TenantB
 {
-    public class PrintB :IPrint
+    public class PrintB : IPrint
     {
-        public string Write()
+        private readonly ICommonText _common;
+
+        public PrintB()//(ICommonText common)
         {
-            return "This is tetant B";
+            //_common = common;
+        }
+
+        public string GetLine()
+        {
+            return "Hello" + "B";
         }
     }
 }

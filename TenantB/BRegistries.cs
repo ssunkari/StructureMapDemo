@@ -1,12 +1,12 @@
-﻿using StructureMap.Configuration.DSL;
-using TenantA;
+﻿using StructureMapLessons;
 
 namespace TenantB
 {
-    public class BRegistries : Registry
+    public class BRegistries : ServiceRegistry
     {
             public BRegistries()
             {
+                For<IHandler>().Use<BHandle>();
                 For<IPrint>().Use<PrintB>();
             }
     }

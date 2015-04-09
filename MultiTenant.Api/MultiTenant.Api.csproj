@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DoJob.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -93,6 +94,10 @@
     <ProjectReference Include="..\..\TenantA\TenantA.csproj">
       <Project>{76CED3B6-1999-4574-8F84-A7455D1D5C2E}</Project>
       <Name>TenantA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructureMapLessons.csproj">
+      <Project>{B0DDDEB3-0E49-446E-9E67-17EFDAA05643}</Project>
+      <Name>StructureMapLessons</Name>
     </ProjectReference>
     <ProjectReference Include="..\TenantB\TenantB.csproj">
       <Project>{3754D43D-E476-44C7-BBE6-C40309999595}</Project>

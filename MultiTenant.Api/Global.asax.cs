@@ -7,7 +7,7 @@ namespace MultiTenant.Api
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            Bootstrapper.Bootstrap();
+            ServiceBootstrapper.Bootstrap();
         }
 
         protected void Session_Start(object sender, EventArgs e)
