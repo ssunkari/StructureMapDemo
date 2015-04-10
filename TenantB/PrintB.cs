@@ -5,15 +5,17 @@ namespace TenantB
     public class PrintB : IPrint
     {
         private readonly ICommonText _common;
+        private readonly IProviderConfiguration _providerConfiguration;
 
-        public PrintB()//(ICommonText common)
+        public PrintB(ICommonText common, IProviderConfiguration providerConfiguration)
         {
-            //_common = common;
+            _common = common;
+            _providerConfiguration = providerConfiguration;
         }
 
         public string GetLine()
         {
-            return "Hello" + "B";
+            return _common.GetCommonText() + "B" + _providerConfiguration.ProviderName;
         }
     }
 }

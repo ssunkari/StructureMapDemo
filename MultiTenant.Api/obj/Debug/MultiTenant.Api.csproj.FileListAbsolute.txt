@@ -1,3 +1,6 @@
+C:\Spikes\StructureMapLessons\MultiTenant.Api\obj\Debug\MultiTenant.Api.csprojResolveAssemblyReference.cache
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMap\ProviderConfiguration.StructureMap.dev.config
+C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMap\Environment.config
 C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\MultiTenant.Api.dll
 C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\MultiTenant.Api.pdb
 C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMap.dll
@@ -9,6 +12,5 @@ C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMapLessons.pdb
 C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\TenantB.pdb
 C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMap.pdb
 C:\Spikes\StructureMapLessons\MultiTenant.Api\bin\StructureMap.xml
-C:\Spikes\StructureMapLessons\MultiTenant.Api\obj\Debug\MultiTenant.Api.csprojResolveAssemblyReference.cache
 C:\Spikes\StructureMapLessons\MultiTenant.Api\obj\Debug\MultiTenant.Api.dll
 C:\Spikes\StructureMapLessons\MultiTenant.Api\obj\Debug\MultiTenant.Api.pdb

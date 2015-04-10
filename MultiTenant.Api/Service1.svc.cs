@@ -1,5 +1,4 @@
-﻿using StructureMap;
-using StructureMapLessons;
+﻿using StructureMapLessons;
 
 namespace MultiTenant.Api
 {
@@ -9,8 +8,8 @@ namespace MultiTenant.Api
     {
         public string GetData(string value)
         {
-            var handler = ObjectFactory.GetNamedInstance<IContainer>(value).GetInstance<IDoJob>();
-            return handler.Run();
+            var resolver = TenantResolver.Resolve<IDoJob>(value);
+            return resolver.Run();
         }
     }
 }

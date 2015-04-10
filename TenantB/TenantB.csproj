@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BHandle.cs" />
-    <Compile Include="BRegistries.cs" />
+    <Compile Include="BRegistry.cs" />
     <Compile Include="PrintB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
