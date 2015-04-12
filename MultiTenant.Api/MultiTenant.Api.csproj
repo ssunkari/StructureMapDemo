@@ -68,6 +68,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProviderTenantResolver.cs" />
     <Compile Include="ServiceBootStrapper.cs" />
     <Compile Include="DoJob.cs" />
     <Compile Include="Global.asax.cs">
@@ -78,9 +79,13 @@
     </Compile>
     <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteTenant.cs" />
+    <Compile Include="StructureMapConfig\TenantBConfiguration.cs" />
     <Compile Include="StructureMapConfig\EnvironmentConfiguration.cs" />
     <Compile Include="StructureMapConfig\ReadEnvironmentConfiguration.cs" />
     <Compile Include="StructureMapConfig\ReadPerProviderConfiguration.cs" />
+    <Compile Include="StructureMapConfig\TenantAConfiguration.cs" />
+    <Compile Include="TenantContainerResolver.cs" />
     <Compile Include="TenantFactory.cs" />
     <Compile Include="TenantResolver.cs" />
   </ItemGroup>
@@ -103,13 +108,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\TenantA\TenantA.csproj">
-      <Project>{76CED3B6-1999-4574-8F84-A7455D1D5C2E}</Project>
-      <Name>TenantA</Name>
-    </ProjectReference>
     <ProjectReference Include="..\StructureMapLessons.csproj">
       <Project>{B0DDDEB3-0E49-446E-9E67-17EFDAA05643}</Project>
       <Name>StructureMapLessons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TenantA\TenantA.csproj">
+      <Project>{8FDC7EE7-A724-48CA-B86A-338E13FCB664}</Project>
+      <Name>TenantA</Name>
     </ProjectReference>
     <ProjectReference Include="..\TenantB\TenantB.csproj">
       <Project>{3754D43D-E476-44C7-BBE6-C40309999595}</Project>

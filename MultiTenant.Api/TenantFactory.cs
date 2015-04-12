@@ -1,23 +1,13 @@
-﻿using System.Linq;
-using StructureMap;
+﻿using StructureMap;
 
 namespace MultiTenant.Api
 {
-    public static class TenantFactory
+    public class TenantFactory 
     {
-        public static IContainer GetNamedContainerInstance(string value)
+        public static IContainer GetNamedContainer(string value)
         {
-            if (InstanceExists(value))
-                return ObjectFactory.GetNamedInstance<IContainer>(value);
-
-            return ObjectFactory.GetInstance<IContainer>();
-        }
-
-        private static bool InstanceExists(string value)
-        {
-            var instanceExists = ObjectFactory.Model.InstancesOf<IContainer>().Any(
-                instance => instance.Name == value);
-            return instanceExists;
+            var factory = ObjectFactory.GetInstance<IContainerResolver>();
+           return factory.Resolve(new ProviderTenantResolver(value));
         }
     }
 }

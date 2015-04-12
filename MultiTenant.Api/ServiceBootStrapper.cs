@@ -2,8 +2,7 @@
 using System.IO;
 using MultiTenant.Api.StructureMapConfig;
 using StructureMap;
-using TenantA;
-using TenantB;
+using StructureMapLessons;
 
 namespace MultiTenant.Api
 {
@@ -11,35 +10,39 @@ namespace MultiTenant.Api
     {
         private static readonly string _productName = string.Empty;
         private static readonly string _appPath = new AssemblyDirectory().GetAssemblyDirectory() + "\\StructureMap";
-        private static readonly string _environment = new ReadEnvironmentConfiguration().GetEnvironmentConfig();
 
         public static void Bootstrap()
         {
-            ObjectFactory.Initialize(x => x.Scan(scanner =>
-                {
-                    scanner.TheCallingAssembly();
-                    scanner.WithDefaultConventions();
-                }
-                                              ));
+            var importConfig = GetImportConfigContainer();
+            var tenants = importConfig.GetAllInstances<IApplicationTenant>();
 
-
-            var aContainer = new Container();
-
-
-            aContainer.Configure(x => x.AddRegistry<ARegistry>());
-
-
-            var bContainer = new Container();
-            bContainer.Configure(x => x.AddRegistry<BRegistry>());
-
-            ObjectFactory
-                .Container.Configure(x =>
+            foreach (var tenant in tenants)
+           {
+                tenant.InitializeContainer(
+                    config =>
                     {
-                        x.For<IContainer>().Use(GetImportConfigContainer()).Named("ImportConfig");
-                        x.For<IContainer>().Use(aContainer).Named("A");
-                        x.For<IContainer>().Use(bContainer).Named("B");
-                    });
+                       config.AddRegistry<BaseRegistry>();
+                    }
+                    );
+
+            } 
+             ObjectFactory.Initialize(
+
+                 config =>
+                 {
+                     config.For<IContainerResolver>()
+                         .TheDefault.Is.ConstructedBy(() => new TenantContainerResolver(tenants));
+                     config.Scan(scanner =>
+                     {
+                         scanner.TheCallingAssembly();
+                         scanner.WithDefaultConventions();
+                     });
+                 });
+            
+           
         }
+
+        private static readonly string _environment = new ReadEnvironmentConfiguration().GetEnvironmentConfig();
 
 
         private static IContainer GetImportConfigContainer()

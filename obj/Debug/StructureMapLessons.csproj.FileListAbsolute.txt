@@ -5,3 +5,10 @@ C:\Spikes\StructureMapLessons\bin\Debug\StructureMap.pdb
 C:\Spikes\StructureMapLessons\bin\Debug\StructureMap.xml
 C:\Spikes\StructureMapLessons\obj\Debug\StructureMapLessons.dll
 C:\Spikes\StructureMapLessons\obj\Debug\StructureMapLessons.pdb
+C:\temp\StructureMapDemo\bin\Debug\StructureMapLessons.dll
+C:\temp\StructureMapDemo\bin\Debug\StructureMapLessons.pdb
+C:\temp\StructureMapDemo\bin\Debug\StructureMap.dll
+C:\temp\StructureMapDemo\bin\Debug\StructureMap.pdb
+C:\temp\StructureMapDemo\bin\Debug\StructureMap.xml
+C:\temp\StructureMapDemo\obj\Debug\StructureMapLessons.dll
+C:\temp\StructureMapDemo\obj\Debug\StructureMapLessons.pdb

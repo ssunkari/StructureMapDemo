@@ -8,3 +8,13 @@ C:\Spikes\StructureMapLessons\TenantB\bin\Debug\StructureMap.xml
 C:\Spikes\StructureMapLessons\TenantB\obj\Debug\TenantB.csprojResolveAssemblyReference.cache
 C:\Spikes\StructureMapLessons\TenantB\obj\Debug\TenantB.dll
 C:\Spikes\StructureMapLessons\TenantB\obj\Debug\TenantB.pdb
+C:\temp\StructureMapDemo\TenantB\bin\Debug\TenantB.dll
+C:\temp\StructureMapDemo\TenantB\bin\Debug\TenantB.pdb
+C:\temp\StructureMapDemo\TenantB\bin\Debug\StructureMap.dll
+C:\temp\StructureMapDemo\TenantB\bin\Debug\StructureMapLessons.dll
+C:\temp\StructureMapDemo\TenantB\bin\Debug\StructureMapLessons.pdb
+C:\temp\StructureMapDemo\TenantB\bin\Debug\StructureMap.pdb
+C:\temp\StructureMapDemo\TenantB\bin\Debug\StructureMap.xml
+C:\temp\StructureMapDemo\TenantB\obj\Debug\TenantB.csprojResolveAssemblyReference.cache
+C:\temp\StructureMapDemo\TenantB\obj\Debug\TenantB.dll
+C:\temp\StructureMapDemo\TenantB\obj\Debug\TenantB.pdb

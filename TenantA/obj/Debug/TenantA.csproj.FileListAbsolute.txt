@@ -1,0 +1,10 @@
+C:\temp\StructureMapDemo\TenantA\bin\Debug\TenantA.dll
+C:\temp\StructureMapDemo\TenantA\bin\Debug\TenantA.pdb
+C:\temp\StructureMapDemo\TenantA\bin\Debug\StructureMap.dll
+C:\temp\StructureMapDemo\TenantA\bin\Debug\StructureMapLessons.dll
+C:\temp\StructureMapDemo\TenantA\bin\Debug\StructureMapLessons.pdb
+C:\temp\StructureMapDemo\TenantA\bin\Debug\StructureMap.pdb
+C:\temp\StructureMapDemo\TenantA\bin\Debug\StructureMap.xml
+C:\temp\StructureMapDemo\TenantA\obj\Debug\TenantA.csprojResolveAssemblyReference.cache
+C:\temp\StructureMapDemo\TenantA\obj\Debug\TenantA.dll
+C:\temp\StructureMapDemo\TenantA\obj\Debug\TenantA.pdb
